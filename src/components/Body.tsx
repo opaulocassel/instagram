@@ -8,20 +8,25 @@ interface Props {
 
   const Body: FC<Props> = ({ text, image }) => {
     return (
-            <View>
+            <View style={styles.container}>
                 <Image style={styles.imagem} source={{ uri:image }}/>
-                <Text>{text}</Text>
+                <Text style={styles.descricao}>{text}</Text>
             </View>
     )
 };
   const styles = StyleSheet.create({
     container: {
-
+      justifyContent: "center",
+      alignItems: "flex-start",
+      width: "100%",
     },
     imagem: {
       width: 250,
       height: 250
     },
+    descricao: {
+      fontWeight: 'bold',
+    }
   });
   
   export default Body;

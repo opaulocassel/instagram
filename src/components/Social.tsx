@@ -10,9 +10,15 @@ interface Props {
   const Social: FC<Props> = ({ comments, reposts, likes }) => {
     return (
         <View style={styles.container}>
-            <Text><FontAwesome name="comment-o" size={24} color="black" />{comments}</Text>
-            <Text><AntDesign name="retweet" size={24} color="black" />{reposts}</Text>
-            <Text><AntDesign name="hearto" size={24} color="black" />{likes}</Text>
+            <View style={styles.icones}>
+                <Text><FontAwesome name="comment-o" size={24} color="black" />{comments}</Text>
+            </View>
+            <View style={styles.icones}>
+                <Text><AntDesign name="retweet" size={24} color="black" />{reposts}</Text>
+            </View>
+            <View style={styles.icones}>
+                <Text><AntDesign name="hearto" size={24} color="black" />{likes}</Text>
+            </View>
         </View>
     )
 }
@@ -24,6 +30,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         width: "100%",
         marginTop: 10,
+      },
+      icones: {
+        flexDirection: 'row',
+        alignItems: 'center',
       },
     });
 

@@ -42,6 +42,7 @@ const Feed: FC<Props> = ({
       width: "95%",
       padding: 20,
       shadowColor: "#fff",
+      backgroundColor: '#d3d3d3',
       shadowOffset: {
         width: 0,
         height: 2,

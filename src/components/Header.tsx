@@ -8,14 +8,21 @@ interface Props {
 
   const Header: FC<Props> = ({ avatar, username }) => {
     return (
-        <View>
-                <Text style={styles.nomeusuario}>{username}</Text>
+        <View style={styles.container}>
                 <Image style={styles.usuario} source={{ uri:avatar }}/>
+                <Text style={styles.nomeusuario}>{username}</Text>
         </View>  
     );
   };
 
 const styles = StyleSheet.create({
+    container: {
+      flexDirection: "row",
+      justifyContent: "flex-start",
+      alignItems: "center",
+      width: "100%",
+      marginVertical: 10,
+    },
     nomeusuario: {
       flexDirection: 'row',
       alignItems: 'center',
