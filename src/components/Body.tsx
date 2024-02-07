@@ -22,7 +22,8 @@ interface Props {
     },
     imagem: {
       width: 250,
-      height: 250
+      height: 250,
+      borderRadius: 10,
     },
     descricao: {
       fontWeight: 'bold',

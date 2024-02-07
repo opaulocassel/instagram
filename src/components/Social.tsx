@@ -11,13 +11,16 @@ interface Props {
     return (
         <View style={styles.container}>
             <View style={styles.icones}>
-                <Text><FontAwesome name="comment-o" size={24} color="black" />{comments}</Text>
+                <FontAwesome name="comment-o" size={24} color="black" />
+                <Text style={{paddingHorizontal: 7}}>{comments}</Text>
             </View>
             <View style={styles.icones}>
-                <Text><AntDesign name="retweet" size={24} color="black" />{reposts}</Text>
+                <AntDesign name="retweet" size={24} color="black" />
+                <Text style={{paddingHorizontal: 7}}>{reposts}</Text>
             </View>
             <View style={styles.icones}>
-                <Text><AntDesign name="hearto" size={24} color="black" />{likes}</Text>
+                <AntDesign name="hearto" size={24} color="black" />
+                <Text style={{paddingHorizontal: 7}}>{likes}</Text>
             </View>
         </View>
     )
